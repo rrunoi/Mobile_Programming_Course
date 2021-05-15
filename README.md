@@ -7,6 +7,6 @@ I am currently using:
 2. React Native:
 3. React Navigation:
     * installation - expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
-                     expo install @react-navigation/stack
+    * installation stack navigation - expo install @react-navigation/stack
 4. WebView:
     * installation - expo install react-native-webview
