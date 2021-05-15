@@ -1,6 +1,6 @@
 # Technologies Used 
 
 I am currently using:
-1. React Native
-2. Expo
+1. Expo
+2. React Native
 3. React Navigation
