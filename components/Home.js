@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, TextInput, FlatList, Button, Alert } from 'reac
 export default function Home(props) {
     const [text, setText] = useState('Slipknot');
     const [itemList, setItemList] = useState([]);
-    const id = itemList.id;
+    const itemId = itemList.id;
 
     useEffect(() => {
         getTab()
@@ -56,7 +56,7 @@ export default function Home(props) {
                         <View>
                             <Text
                                 style={{ fontSize: 18 }}
-                                onPress={() => navigate('TabPage', { id, id })}
+                                onPress={() => navigate('TabPage', { itemId })}
                             >Artist: {item.artist.name}</Text>
                             <Text
                                 style={{ fontSize: 18 }}

@@ -20,11 +20,11 @@ const styles = StyleSheet.create({
 
 import React, { Component } from 'react';
 import { WebView } from 'react-native-webview';
-import itemList from './Home';
+import itemId from './Home';
 
 // ...
 export default class TabPage extends Component {
     render() {
-        return <WebView source={{ uri: `http://www.songsterr.com/a/wa/song?id=${itemList.id}` }} />;
+        return <WebView source={{ uri: `http://www.songsterr.com/a/wa/song?id=${itemId}` }} />;
     }
 }
