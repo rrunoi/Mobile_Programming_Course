@@ -1,4 +1,4 @@
-# Used Technologies
+# Technologies Used 
 
 I am currently using:
 1. React Native
