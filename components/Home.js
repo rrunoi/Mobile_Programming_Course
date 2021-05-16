@@ -55,11 +55,11 @@ export default function Home(props) {
                         <View>
                             <Text
                                 style={{ fontSize: 18 }}
-                            // onPress={() => navigate('TabPage', item.id)}
+                            // onPress={() => navigate('TabPage', item.id)} make clickable by removing comment tag
                             >Artist: {item.artist.name}</Text>
                             <Text
                                 style={{ fontSize: 18, color: 'rgba(115, 105, 255, 1.0)' }}
-                                onPress={() => navigate('TabPage', item.id)}
+                                onPress={() => navigate('TabPage', item.id)}  // clickable item
                             >Title: {item.title}</Text>
                         </View>
                     }
