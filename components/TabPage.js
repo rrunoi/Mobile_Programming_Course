@@ -1,13 +1,16 @@
-/* import React from 'react';
-import { StyleSheet, Image } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import WebView from 'react-native-webview';
 
-export default function TabPage(route) {
-    const { tabs } = route.params;
-
+function TabPage(props) {
     return (
-        <HTML source={tabs} />
+        <View style={{ height: 525, width: 365 }}>
+            <WebView source={{ uri: `http://www.songsterr.com/a/wa/song?id=${props.route.params}` }} />
+        </View>
     );
 };
+
+export default TabPage;
 
 const styles = StyleSheet.create({
     container: {
@@ -16,15 +19,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-}); */
-
-import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
-import itemId from './Home';
-
-// ...
-export default class TabPage extends Component {
-    render() {
-        return <WebView source={{ uri: `http://www.songsterr.com/a/wa/song?id=${itemId}` }} />;
-    }
-}
+});

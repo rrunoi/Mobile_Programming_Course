@@ -4,7 +4,6 @@ import { StyleSheet, View, Text, TextInput, FlatList, Button, Alert } from 'reac
 export default function Home(props) {
     const [text, setText] = useState('Slipknot');
     const [itemList, setItemList] = useState([]);
-    const itemId = itemList.id;
 
     useEffect(() => {
         getTab()
@@ -56,11 +55,11 @@ export default function Home(props) {
                         <View>
                             <Text
                                 style={{ fontSize: 18 }}
-                                onPress={() => navigate('TabPage', { itemId })}
+                            // onPress={() => navigate('TabPage', item.id)}
                             >Artist: {item.artist.name}</Text>
                             <Text
-                                style={{ fontSize: 18 }}
-                            //onPress={() => navigate('TabPage', { id, id })}
+                                style={{ fontSize: 18, color: 'rgba(115, 105, 255, 1.0)' }}
+                                onPress={() => navigate('TabPage', item.id)}
                             >Title: {item.title}</Text>
                         </View>
                     }
@@ -71,8 +70,6 @@ export default function Home(props) {
         </View>
     );
 };
-
-// {() => navigate('TabPage', { uri: `http://www.songsterr.com/a/wa/song?id=${item.id}` })}
 
 const styles = StyleSheet.create({
     container: {
@@ -85,7 +82,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         width: 300,
         borderColor: 'rgba(156,154,151,1.0)',
-        borderWidth: 3,
+        borderWidth: 1,
+        padding: 2,
         margin: 6,
     },
 });
